@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "kanban-d7a53": {
+      "hosting": {
+        "kanban-cards": [
+          "kanban-d7a53"
+        ]
+      }
+    }
+  }
+}
