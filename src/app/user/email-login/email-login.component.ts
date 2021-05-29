@@ -8,8 +8,7 @@ import { AngularFireAuth } from '@angular/fire/auth';
   styleUrls: ['./email-login.component.scss']
 })
 export class EmailLoginComponent implements OnInit {
-  form: FormGroup | undefined;
-
+  form!: FormGroup;
   type: 'login' | 'signup' | 'reset' = 'signup'
   loading = false
   serverMessage!: string;
@@ -23,11 +22,11 @@ export class EmailLoginComponent implements OnInit {
     })
   }
 
-  changeType(val:string) {
-    return this.type === val
+  changeType(val:any) {
+    this.type = val
   }
 
-  get isLoggedIn() {
+  get isLogin() {
     return this.type === 'login'
   }
 

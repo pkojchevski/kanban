@@ -2,11 +2,11 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 
 @Component({
-  selector: 'app-delete',
-  templateUrl: './delete.component.html',
-  styleUrls: ['./delete.component.scss']
+  selector: 'app-delete-button',
+  templateUrl: './delete-button.component.html',
+  styleUrls: ['./delete-button.component.scss']
 })
-export class DeleteComponent {
+export class DeleteButtonComponent {
   canDelete: boolean = false;
   @Output() delete = new EventEmitter<boolean>();
 
@@ -19,7 +19,7 @@ export class DeleteComponent {
     this.canDelete = false;
   }
 
-  deletBoard() {
+  deleteBoard() {
     this.delete.emit(true)
     this.canDelete = false;
   }

@@ -1,56 +1,32 @@
-.boards {
-    width: auto;
-    padding: 24px;
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    &::-webkit-scrollbar {
-       height:4px;
-       width: 4px;
-    }
-    &::-webkit-scrollbar-track {
-        background-color: #000;
-    }
-    &::-webkit-scrollbar {
-        width:3px;
-        background-color: #000;;
-    }
-
-    &::-webkit-scrollbar-thumb {
-         background-color: #f5f5f5;
-         border: 2px solid #555555;
-    }
-
-    .handle {
-        position: relative;
-        top: 5px;
-        left:0;
-    }
-}
-
-
-.cdk-drag-placeholder {
-    opacity: 0.2px;
-    width: 350px;
-    border: 5px dashed gray;
-    margin: 0 10px;
-}
-
-.cdk-drag-placeholder {
-    opacity: 0.5;
+.outer-card {
+    margin: 10px;
+    min-width: 300px;
+    max-width: 300px;
+    padding: 10px;
+    background: #212121;
   }
   
+  .inner-card {
+      margin: 5px 0;
+      cursor: pointer;
+  }
+
   .cdk-drag-animating {
     transition: transform 300ms ease;
   }
   
-  .cdk-drop-list-dragging .cdk-drag {
+  .tasks.cdk-drop-list-dragging .cdk-drag {
     transition: transform 300ms ease;
   }
-  
-  .blue { background: #71deff; color: black; }
-  .green { background: #36e9b6; color: black;  }
-  .yellow { background: #ffcf44; color: black; }
-  .purple { background: #b15cff; }
-  .red { background: #e74a4a; }
-  .gray { background: gray; text-decoration: line-through; }
+
+.cdk-drag-placeholder {
+  opacity: 0.5;
+}
+
+.blue { background: #71deff; color: black; }
+.green { background: #36e9b6; color: black;  }
+.yellow { background: #ffcf44; color: black; }
+.purple { background: #b15cff; }
+.red { background: #e74a4a; }
+
+.gray { background: gray; text-decoration: line-through; }

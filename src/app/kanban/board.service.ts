@@ -4,7 +4,6 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import { Board, Task } from './board.modal';
 import firebase from 'firebase/app'
 import { switchMap } from 'rxjs/operators';
-import { timeStamp } from 'console';
 
 @Injectable({
   providedIn: 'root'
